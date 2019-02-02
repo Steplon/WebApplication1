@@ -14,56 +14,59 @@
 </head>
 <body>
     <form method="post">
-        <label asp-for="Number1">Enter your first int: </label>
-        <input asp-for="Number1" />
-        <br />
-        <label asp-for="Number2">Enter your second int: </label>
-        <input asp-for="Number2" />
-        <br />
-        <label asp-for="MyDecimal">Enter your first decimal: </label>
-        <input asp-for="MyDecimal" />
-        <br />
-        <label asp-for="MyDecimal2">Enter your second decimal: </label>
-        <input asp-for="MyDecimal2" />
-        <br />
-        <label asp-for="MyDouble">Enter your first double: </label>
-        <input asp-for="MyDouble" />
-        <br />
-        <label asp-for="MyDouble2">Enter your second double: </label>
-        <input asp-for="MyDouble2" />
-        <br />
-        <label asp-for="MyFloat">Enter your first float: </label>
-        <input asp-for="MyFloat" />
-        <br />
-        <label asp-for="MyFloat2">Enter your second float: </label>
-        <input asp-for="MyFloat2" />
-        <br />
-        <label asp-for="MyString">Enter a string: </label>
-        <input asp-for="MyString" />
-        <br />
-        <label asp-for="MydateTime">Enter the date: </label>
-        <input asp-for="MydateTime" />
-        <br />
-        <label asp-for="MydateTime2">Enter the date2: </label>
-        <input asp-for="MydateTime2" />
-        <br />
-        <label asp-for="IsContactAllowed">True or false: </label>
-        <input asp-for="IsContactAllowed" />
-        <br />
-        <label for="winter">
-            <input type="radio" value="winter" asp-for="Season" id="winter" selected />Winter
-        </label>
-        <label for="autumn">
-            <input type="radio" value="autumn" asp-for="Season" id="autumn" />Autumn
-        </label>
-        <label for="summer">
-            <input type="radio" value="summer" asp-for="Season" id="summer" />Summer
-        </label>
-        <label for="spring">
-            <input type="radio" value="spring" asp-for="Season" id="spring" />Spring
-        </label>
-        <button type="submit">Submit</button>
-
+        <fieldset>
+            <legend>Data Types</legend>
+            <label asp-for="Number1">Enter your first int: </label>
+            <input asp-for="Number1" />
+            <br />
+            <label asp-for="Number2">Enter your second int: </label>
+            <input asp-for="Number2" />
+            <br />
+            <label asp-for="MyDecimal">Enter your first decimal: </label>
+            <input asp-for="MyDecimal" />
+            <br />
+            <label asp-for="MyDecimal2">Enter your second decimal: </label>
+            <input asp-for="MyDecimal2" />
+            <br />
+            <label asp-for="MyDouble">Enter your first double: </label>
+            <input asp-for="MyDouble" />
+            <br />
+            <label asp-for="MyDouble2">Enter your second double: </label>
+            <input asp-for="MyDouble2" />
+            <br />
+            <label asp-for="MyFloat">Enter your first float: </label>
+            <input asp-for="MyFloat" />
+            <br />
+            <label asp-for="MyFloat2">Enter your second float: </label>
+            <input asp-for="MyFloat2" />
+            <br />
+            <label asp-for="MyString">Enter a string: </label>
+            <input asp-for="MyString" />
+            <br />
+            <label asp-for="MydateTime">Enter the date: </label>
+            <input asp-for="MydateTime" />
+            <br />
+            <label asp-for="MydateTime2">Enter the date2: </label>
+            <input asp-for="MydateTime2" />
+            <br />
+            <label asp-for=IsContactAllowed>True or false: </label>
+            <input asp-for=IsContactAllowed />
+            <br />
+            <label for="winter">
+                <input type="radio" value="winter" asp-for="Season" id="winter" selected />Winter
+            </label>
+            <label for="autumn">
+                <input type="radio" value="autumn" asp-for="Season" id="autumn" />Autumn
+            </label>
+            <label for="summer">
+                <input type="radio" value="summer" asp-for="Season" id="summer" />Summer
+            </label>
+            <label for="spring">
+                <input type="radio" value="spring" asp-for="Season" id="spring" />Spring
+            </label>
+            <br />
+            <button type="submit">Submit</button>
+        </fieldset>
     </form>
 
     <h1>@Model.Message</h1>
