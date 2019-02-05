@@ -1,0 +1,100 @@
+﻿@page
+@model WebApplication1.pages.DataTypeModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DataType</title>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Datatype Testing</legend>
+            @*<label asp-for=Custom>A Value for Custom: </label>
+            <input asp-for=Custom><br />*@
+
+            <label asp-for=DateTime>A Value for DateTime: </label>
+            <input asp-for=DateTime><br />
+
+            <label asp-for=Date>A Value for Date: </label>
+            <input asp-for=Date><br />
+
+            <label asp-for=Time>A Value for Time: </label>
+            <input asp-for=Time><br />
+
+            <label asp-for=Duration>A Value for Duration: </label>
+            <input asp-for=Duration><br />
+
+            <label asp-for=PhoneNumber>A Value for PhoneNumber: </label>
+            <input asp-for=PhoneNumber><br />
+
+            <label asp-for=Currency>A Value for Currency: </label>
+            <input asp-for=Currency><br />
+
+            <label asp-for=Text>A Value for Text: </label>
+            <input asp-for=Text><br />
+
+            <label asp-for=Html>A Value for Html: </label>
+            <input asp-for=Html><br />
+
+            <label asp-for=MultilineText>A Value for MultilineText: </label>
+            <input asp-for=MultilineText><br />
+
+            <label asp-for=EmailAddress>A Value for EmailAddress: </label>
+            <input asp-for=EmailAddress><br />
+
+            <label asp-for=Password>A Value for Password: </label>
+            <input asp-for=Password><br />
+
+            <label asp-for=Url1>A Value for Url1: </label>
+            <input asp-for=Url1><br />
+
+            <label asp-for=ImageUrl>A Value for ImageUrl: </label>
+            <input asp-for=ImageUrl><br />
+
+            <label asp-for=CreditCard>A Value for CreditCard: </label>
+            <input asp-for=CreditCard><br />
+
+            <label asp-for=PostalCode>A Value for PostalCode: </label>
+            <input asp-for=PostalCode><br />
+
+            <label asp-for=Upload>A Value for Upload: </label>
+            <input asp-for=Upload><br />
+            <button type="submit">Submit</button>
+
+        </fieldset>
+    </form>
+
+
+    @*<h3>@Model.Custom</h3>*@<br />
+    <h3>@Model.DateTime</h3><br />
+    <h3>@Model.Date</h3><br />
+    <h3>@Model.Time</h3><br />
+    <h3>@Model.Duration</h3><br />
+    <h3>@Model.PhoneNumber</h3><br />
+    <h3>@Model.Currency</h3><br />
+    <h3>@Model.Text</h3><br />
+    <h3>@Model.Html</h3><br />
+    <h3>@Model.MultilineText</h3><br />
+    <h3>@Model.EmailAddress</h3><br />
+    <h3>@Model.Password</h3><br />
+    <h3>@Model.Url1</h3><br />
+    <h3>@Model.ImageUrl</h3><br />
+    <h3>@Model.CreditCard</h3><br />
+    <h3>@Model.PostalCode</h3><br />
+    <h3>@Model.Upload</h3><br />
+
+
+
+
+
+
+
+</body>
+</html>
